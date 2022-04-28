@@ -2,7 +2,7 @@ import socket
 import sys
 import threading
 
-rendezvous = ('10.0.0.51', 55555)
+rendezvous = ('10.0.0.151', 55555)
 
 # connect to rendezvous
 print('connecting to rendezvous server')
@@ -46,7 +46,7 @@ def listen():
 
     while True:
         data = sock.recv(1024)
-        print('\rpeer: {}\n> '.format(data.decode()), end='')
+        print('\rpeer: {}\n> '.format(data.decode()))
 
 listener = threading.Thread(target=listen, daemon=True);
 listener.start()
