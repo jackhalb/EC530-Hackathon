@@ -6,6 +6,7 @@ rendezvous = ('10.0.0.151', 55555)
 
 # connect to rendezvous
 print('connecting to rendezvous server')
+print(sys.version_info)
 
 sock = socket.socket(socket.AF_INET, socket.SOCK_DGRAM)
 sock.bind(('0.0.0.0', 50001))
