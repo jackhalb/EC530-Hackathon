@@ -1,3 +1,6 @@
+# client and server code were created from this repo:
+# https://github.com/engineer-man/youtube/tree/master/141
+
 import socket
 import sys
 import threading
