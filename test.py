@@ -48,7 +48,7 @@ def listen():
         data = sock.recv(1024)
         print('\rpeer: {}\n> '.format(data.decode()))
 
-listener = threading.Thread(target=listen, daemon=True);
+listener = threading.Thread(target=listen);
 listener.start()
 
 # send messages
