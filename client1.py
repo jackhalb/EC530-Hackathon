@@ -4,7 +4,7 @@ import socket
 import sys
 import threading
 
-DEST_IP = ""
+DEST_IP = "10.0.0.219"
 DEST_PORT = 50002
 SEND_PORT = 50001
 
